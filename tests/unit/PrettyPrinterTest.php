@@ -15,6 +15,7 @@ use PHPUnit\Framework\TestCase;
  * @covers \SebastianBergmann\XdebugTraceUtil\PrettyPrinter
  *
  * @uses \SebastianBergmann\XdebugTraceUtil\EntryFrame
+ * @uses \SebastianBergmann\XdebugTraceUtil\ReturnFrame
  * @uses \SebastianBergmann\XdebugTraceUtil\FrameWithTimeAndMemory
  * @uses \SebastianBergmann\XdebugTraceUtil\Frame
  * @uses \SebastianBergmann\XdebugTraceUtil\FrameCollection
