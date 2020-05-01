@@ -32,11 +32,6 @@ final class ReturnFrameTest extends TestCase
         $this->assertSame('value', $this->fixture()->value());
     }
 
-    public function testCanBeFormattedAsString(): void
-    {
-        $this->assertSame('', $this->fixture()->asString());
-    }
-
     public function testCanBeQueriedForFrameType(): void
     {
         $this->assertFalse($this->fixture()->isEntry());

@@ -58,11 +58,6 @@ final class EntryFrameTest extends TestCase
         $this->assertSame(1, $this->fixture()->line());
     }
 
-    public function testCanBeFormattedAsString(): void
-    {
-        $this->assertSame('-> {main} test.php:1', $this->fixture()->asString());
-    }
-
     public function testCanBeQueriedForFrameType(): void
     {
         $this->assertTrue($this->fixture()->isEntry());

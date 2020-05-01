@@ -69,16 +69,4 @@ final class EntryFrame extends FrameWithTimeAndMemory
     {
         return $this->line;
     }
-
-    public function asString(): string
-    {
-        return \sprintf(
-            '%s-> %s%s %s:%d',
-            \str_repeat('  ', $this->level() - 1),
-            $this->name(),
-            $this->name() !== '{main}' ? '()' : '',
-            $this->file(),
-            $this->line()
-        );
-    }
 }

@@ -38,11 +38,6 @@ final class ExitFrameTest extends TestCase
         $this->assertSame(0, $this->fixture()->memory());
     }
 
-    public function testCanBeFormattedAsString(): void
-    {
-        $this->assertSame('', $this->fixture()->asString());
-    }
-
     public function testCanBeQueriedForFrameType(): void
     {
         $this->assertFalse($this->fixture()->isEntry());

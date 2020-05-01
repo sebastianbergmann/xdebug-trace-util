@@ -91,9 +91,4 @@ abstract class Frame
     {
         return $this->function;
     }
-
-    public function asString(): string
-    {
-        return '';
-    }
 }

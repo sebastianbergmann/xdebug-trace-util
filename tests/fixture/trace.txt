@@ -1,0 +1,14 @@
+-> {main} /home/sb/test.php:0
+  -> str_split() /home/sb/test.php:8
+  -> ret_ord() /home/sb/test.php:10
+    -> ord() /home/sb/test.php:5
+  -> ret_ord() /home/sb/test.php:10
+    -> ord() /home/sb/test.php:5
+  -> ret_ord() /home/sb/test.php:10
+    -> ord() /home/sb/test.php:5
+  -> ret_ord() /home/sb/test.php:10
+    -> ord() /home/sb/test.php:5
+  -> ret_ord() /home/sb/test.php:10
+    -> ord() /home/sb/test.php:5
+  -> ret_ord() /home/sb/test.php:10
+    -> ord() /home/sb/test.php:5
