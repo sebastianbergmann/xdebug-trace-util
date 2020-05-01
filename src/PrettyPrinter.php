@@ -9,6 +9,9 @@
  */
 namespace SebastianBergmann\XdebugTraceUtil;
 
+/**
+ * @psalm-immutable
+ */
 final class PrettyPrinter
 {
     public function print(FrameCollection $frames): string
