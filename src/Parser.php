@@ -24,7 +24,9 @@ final class Parser
             $line = $file->fgetcsv("\t");
 
             if (!$line) {
+                // @codeCoverageIgnoreStart
                 break;
+                // @codeCoverageIgnoreEnd
             }
 
             if (count($line) === 1 && strpos((string) $line[0], 'Version:') === 0) {
