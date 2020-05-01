@@ -9,7 +9,10 @@
  */
 namespace SebastianBergmann\XdebugTraceUtil;
 
-final class AutoloadFilter extends \FilterIterator
+use function assert;
+use FilterIterator;
+
+final class AutoloadFilter extends FilterIterator
 {
     private bool $accept = true;
 
@@ -24,7 +27,7 @@ final class AutoloadFilter extends \FilterIterator
     {
         $frame = $this->getInnerIterator()->current();
 
-        \assert($frame instanceof Frame);
+        assert($frame instanceof Frame);
 
         if ($this->accept && $frame->isEntry() && $frame->name() === 'spl_autoload_call') {
             $this->accept = false;

@@ -9,11 +9,15 @@
  */
 namespace SebastianBergmann\XdebugTraceUtil;
 
+use function count;
+use SplFileObject;
+use function strpos;
+
 final class Parser
 {
     public function load(string $filename): FrameCollection
     {
-        $file   = new \SplFileObject($filename);
+        $file   = new SplFileObject($filename);
         $frames = [];
 
         while (!$file->eof()) {
@@ -23,19 +27,19 @@ final class Parser
                 break;
             }
 
-            if (\count($line) === 1 && \strpos((string) $line[0], 'Version:') === 0) {
+            if (count($line) === 1 && strpos((string) $line[0], 'Version:') === 0) {
                 continue;
             }
 
-            if (\count($line) === 1 && \strpos((string) $line[0], 'File format:') === 0) {
+            if (count($line) === 1 && strpos((string) $line[0], 'File format:') === 0) {
                 continue;
             }
 
-            if (\count($line) === 1 && \strpos((string) $line[0], 'TRACE') === 0) {
+            if (count($line) === 1 && strpos((string) $line[0], 'TRACE') === 0) {
                 continue;
             }
 
-            if (\count($line) === 10 && $line[2] === '0') {
+            if (count($line) === 10 && $line[2] === '0') {
                 $frames[] = Frame::entry(
                     (int) $line[0],
                     (int) $line[1],
@@ -51,7 +55,7 @@ final class Parser
                 continue;
             }
 
-            if (\count($line) === 5 && $line[2] === '1') {
+            if (count($line) === 5 && $line[2] === '1') {
                 $frames[] = Frame::exit(
                     (int) $line[0],
                     (int) $line[1],
@@ -62,7 +66,7 @@ final class Parser
                 continue;
             }
 
-            if (\count($line) === 6 && $line[2] === 'R') {
+            if (count($line) === 6 && $line[2] === 'R') {
                 $frames[] = Frame::return(
                     (int) $line[0],
                     (int) $line[1],

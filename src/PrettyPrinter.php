@@ -9,6 +9,10 @@
  */
 namespace SebastianBergmann\XdebugTraceUtil;
 
+use const PHP_EOL;
+use function sprintf;
+use function str_repeat;
+
 /**
  * @psalm-immutable
  */
@@ -31,9 +35,9 @@ final class PrettyPrinter
 
     private function printEntryFrame(EntryFrame $frame): string
     {
-        return \sprintf(
-            '%s-> %s%s %s:%d' . \PHP_EOL,
-            \str_repeat('  ', $frame->level() - 1),
+        return sprintf(
+            '%s-> %s%s %s:%d' . PHP_EOL,
+            str_repeat('  ', $frame->level() - 1),
             $frame->name(),
             $frame->name() !== '{main}' ? '()' : '',
             $frame->file(),

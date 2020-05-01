@@ -9,7 +9,10 @@
  */
 namespace SebastianBergmann\XdebugTraceUtil;
 
-final class FrameCollectionIterator implements \Iterator
+use function count;
+use Iterator;
+
+final class FrameCollectionIterator implements Iterator
 {
     /**
      * @psalm-var list<Frame>
@@ -30,7 +33,7 @@ final class FrameCollectionIterator implements \Iterator
 
     public function valid(): bool
     {
-        return $this->position < \count($this->frames);
+        return $this->position < count($this->frames);
     }
 
     public function key(): int

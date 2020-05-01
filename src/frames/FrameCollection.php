@@ -9,15 +9,19 @@
  */
 namespace SebastianBergmann\XdebugTraceUtil;
 
+use function count;
+use Countable;
+use IteratorAggregate;
+
 /**
  * @psalm-immutable
  */
-final class FrameCollection implements \Countable, \IteratorAggregate
+final class FrameCollection implements Countable, IteratorAggregate
 {
     /**
      * @psalm-var list<Frame>
      */
-    private array $frames = [];
+    private array $frames;
 
     public static function fromList(Frame ...$frames): self
     {
@@ -44,6 +48,6 @@ final class FrameCollection implements \Countable, \IteratorAggregate
 
     public function count(): int
     {
-        return \count($this->frames);
+        return count($this->frames);
     }
 }
