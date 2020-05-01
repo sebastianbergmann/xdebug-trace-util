@@ -1,4 +1,23 @@
 {
+    "name": "sebastian/xdebug-trace-util",
+    "description": "Collection of value objects, filters, etc. for working with Xdebug function traces",
+    "type": "library",
+    "homepage": "https://github.com/sebastianbergmann/xdebug-trace-util",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Sebastian Bergmann",
+            "email": "sebastian@phpunit.de",
+            "role": "lead"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/sebastianbergmann/xdebug-trace-util/issues"
+    },
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4"
+    },
     "config": {
         "platform": {
             "php": "7.4.0"
