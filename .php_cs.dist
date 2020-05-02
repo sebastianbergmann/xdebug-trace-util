@@ -141,7 +141,13 @@ return PhpCsFixer\Config::create()
                     'method_private_static',
                 ],
             ],
-            'ordered_imports' => true,
+            'ordered_imports' => [
+                'imports_order' => [
+                    'const',
+                    'function',
+                    'class',
+                ],
+            ],
             'ordered_interfaces' => [
                 'direction' => 'ascend',
                 'order' => 'alpha',
