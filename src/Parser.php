@@ -10,8 +10,8 @@
 namespace SebastianBergmann\XdebugTraceUtil;
 
 use function count;
-use function strpos;
 use SplFileObject;
+use function strpos;
 
 final class Parser
 {
