@@ -27,9 +27,9 @@ final class PrettyPrinterTest extends TestCase
     public function testPrettyPrintsFrames(): void
     {
         $this->assertStringEqualsFile(
-            __DIR__ . '/../fixture/trace.txt',
+            __DIR__ . '/../fixture/function/trace.txt',
             (new PrettyPrinter)->print(
-                (new Parser)->load(__DIR__ . '/../fixture/trace.xt')
+                (new Parser)->load(__DIR__ . '/../fixture/function/trace.xt')
             )
         );
     }

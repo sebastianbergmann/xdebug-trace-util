@@ -1,0 +1,34 @@
+Version: 2.9.6
+File format: 4
+TRACE START [2020-07-30 06:58:54]
+1	0	0	0.000264	428640	{main}	1		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	0
+2	1	0	0.000284	428640	str_split	0		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	15
+2	1	1	0.000290	429208
+2	2	0	0.000315	429240	ret_ord	1		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	16
+3	3	0	0.000321	429240	ord	0		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	12
+3	3	1	0.000326	429240
+2	2	1	0.000329	429240
+2	4	0	0.000344	429240	ret_ord	1		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	16
+3	5	0	0.000348	429240	ord	0		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	12
+3	5	1	0.000352	429240
+2	4	1	0.000354	429240
+2	6	0	0.000398	429240	ret_ord	1		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	16
+3	7	0	0.000402	429240	ord	0		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	12
+3	7	1	0.000407	429240
+2	6	1	0.000410	429240
+2	8	0	0.000423	429240	ret_ord	1		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	16
+3	9	0	0.000428	429240	ord	0		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	12
+3	9	1	0.000431	429240
+2	8	1	0.000433	429240
+2	10	0	0.000443	429240	ret_ord	1		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	16
+3	11	0	0.000448	429240	ord	0		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	12
+3	11	1	0.000451	429240
+2	10	1	0.000453	429240
+2	12	0	0.000464	429240	ret_ord	1		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	16
+3	13	0	0.000469	429240	ord	0		/path/to/xdebug-trace-util/tests/fixture/function/src/run.php	12
+3	13	1	0.000472	429240
+2	12	1	0.000474	429240
+1	0	1	0.000482	428704
+			0.000576	291680
+TRACE END   [2020-07-30 06:58:54]
+

@@ -1,0 +1,14 @@
+-> {main} /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:0
+  -> str_split() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:15
+  -> ret_ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:16
+    -> ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:12
+  -> ret_ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:16
+    -> ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:12
+  -> ret_ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:16
+    -> ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:12
+  -> ret_ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:16
+    -> ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:12
+  -> ret_ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:16
+    -> ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:12
+  -> ret_ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:16
+    -> ord() /path/to/xdebug-trace-util/tests/fixture/function/src/run.php:12
