@@ -9,11 +9,10 @@
  */
 namespace SebastianBergmann\XdebugTraceUtil;
 
-use function iterator_to_array;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \SebastianBergmann\XdebugTraceUtil\AutoloadFilter
+ * @covers \SebastianBergmann\XdebugTraceUtil\SplAutoloadCallFilter
  *
  * @uses \SebastianBergmann\XdebugTraceUtil\FrameCollection
  * @uses \SebastianBergmann\XdebugTraceUtil\FrameCollectionIterator
@@ -25,23 +24,16 @@ use PHPUnit\Framework\TestCase;
  * @uses \SebastianBergmann\XdebugTraceUtil\Parser
  * @uses \SebastianBergmann\XdebugTraceUtil\PrettyPrinter
  */
-final class AutoloadFilterTest extends TestCase
+final class SplAutoloadCallFilterTest extends TestCase
 {
     public function testFiltersAutoloadFrames(): void
     {
         $this->assertStringEqualsFile(
             __DIR__ . '/../fixture/method-in-autoloaded-class/filtered-trace.txt',
             (new PrettyPrinter)->print(
-                FrameCollection::fromList(
-                    ...iterator_to_array(
-                        AutoloadFilter::from(
-                            (new Parser)->load(
-                                __DIR__ . '/../fixture/method-in-autoloaded-class/trace.xt'
-                            )
-                        ),
-                        false
-                    )
-                )
+                (new Parser)->load(
+                    __DIR__ . '/../fixture/method-in-autoloaded-class/trace.xt'
+                )->apply(new SplAutoloadCallFilter)
             )
         );
     }

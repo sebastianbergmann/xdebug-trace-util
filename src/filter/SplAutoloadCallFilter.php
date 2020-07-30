@@ -9,31 +9,14 @@
  */
 namespace SebastianBergmann\XdebugTraceUtil;
 
-use function assert;
-use FilterIterator;
-
-final class AutoloadFilter extends FilterIterator
+final class SplAutoloadCallFilter implements Filter
 {
     private bool $accept = true;
 
     private int $level = 0;
 
-    public static function from(FrameCollection $frames): self
+    public function accept(Frame $frame): bool
     {
-        return new self($frames->getIterator());
-    }
-
-    private function __construct(FrameCollectionIterator $frames)
-    {
-        parent::__construct($frames);
-    }
-
-    public function accept(): bool
-    {
-        $frame = $this->getInnerIterator()->current();
-
-        assert($frame instanceof Frame);
-
         if ($this->accept && $frame->isEntry() && $frame->name() === 'spl_autoload_call') {
             $this->accept = false;
             $this->level  = $frame->level();

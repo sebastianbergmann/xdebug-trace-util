@@ -50,4 +50,19 @@ final class FrameCollection implements Countable, IteratorAggregate
     {
         return count($this->frames);
     }
+
+    public function apply(Filter $filter): self
+    {
+        $frames = [];
+
+        foreach ($this->frames as $frame) {
+            if (!$filter->accept($frame)) {
+                continue;
+            }
+
+            $frames[] = $frame;
+        }
+
+        return self::fromList(...$frames);
+    }
 }
