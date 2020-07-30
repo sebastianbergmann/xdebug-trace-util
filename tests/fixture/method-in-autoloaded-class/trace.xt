@@ -1,0 +1,48 @@
+Version: 2.9.6
+File format: 4
+TRACE START [2020-07-29 13:17:21]
+1	0	0	0.000153	428640	{main}	1		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/run.php	0
+2	1	0	0.000272	429720	require	1	/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/autoload.php	/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/run.php	12
+3	2	0	0.000288	430416	spl_autoload_register	0		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/autoload.php	19
+3	2	1	0.000295	430888
+2	1	1	0.000298	430888
+2	3	0	0.000301	431016	spl_autoload_call	0		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/run.php	15
+3	4	0	0.000307	431096	{closure:/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/autoload.php:6-17}	1		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/run.php	15
+4	5	0	0.000319	431128	strtolower	0		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/autoload.php	13
+4	5	1	0.000325	431208
+4	6	0	0.000453	431944	require	1	/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/autoload.php	15
+4	6	1	0.000460	431944
+3	4	1	0.000463	431632
+2	3	1	0.000465	431552
+2	7	0	0.000469	431592	SebastianBergmann\XdebugTraceUtil\Example->publicMethod	1		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/run.php	15
+3	8	0	0.000474	431592	str_split	0		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	21
+3	8	1	0.000478	432160
+3	9	0	0.000482	432192	SebastianBergmann\XdebugTraceUtil\Example->privateMethod	1		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	22
+4	10	0	0.000486	432192	ord	0		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	30
+4	10	1	0.000492	432192
+3	9	1	0.000495	432192
+3	11	0	0.000499	432224	SebastianBergmann\XdebugTraceUtil\Example->privateMethod	1		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	22
+4	12	0	0.000503	432224	ord	0		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	30
+4	12	1	0.000506	432224
+3	11	1	0.000508	432224
+3	13	0	0.000510	432232	SebastianBergmann\XdebugTraceUtil\Example->privateMethod	1		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	22
+4	14	0	0.000514	432232	ord	0		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	30
+4	14	1	0.000517	432232
+3	13	1	0.000519	432232
+3	15	0	0.000521	432240	SebastianBergmann\XdebugTraceUtil\Example->privateMethod	1		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	22
+4	16	0	0.000525	432240	ord	0		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	30
+4	16	1	0.000528	432240
+3	15	1	0.000530	432240
+3	17	0	0.000532	432248	SebastianBergmann\XdebugTraceUtil\Example->privateMethod	1		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	22
+4	18	0	0.000536	432248	ord	0		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	30
+4	18	1	0.000538	432248
+3	17	1	0.000540	432248
+3	19	0	0.000542	432256	SebastianBergmann\XdebugTraceUtil\Example->privateMethod	1		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	22
+4	20	0	0.000546	432256	ord	0		/path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php	30
+4	20	1	0.000548	432256
+3	19	1	0.000550	432256
+2	7	1	0.000553	431592
+1	0	1	0.000556	431552
+			0.000644	292776
+TRACE END   [2020-07-29 13:17:21]
+

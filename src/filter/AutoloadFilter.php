@@ -18,7 +18,12 @@ final class AutoloadFilter extends FilterIterator
 
     private int $level = 0;
 
-    public function __construct(FrameCollectionIterator $frames)
+    public static function from(FrameCollection $frames): self
+    {
+        return new self($frames->getIterator());
+    }
+
+    private function __construct(FrameCollectionIterator $frames)
     {
         parent::__construct($frames);
     }

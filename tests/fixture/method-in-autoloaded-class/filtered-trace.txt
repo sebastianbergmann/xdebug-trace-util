@@ -1,0 +1,17 @@
+-> {main} /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/run.php:0
+  -> require() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/run.php:12
+    -> spl_autoload_register() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/autoload.php:19
+  -> SebastianBergmann\XdebugTraceUtil\Example->publicMethod() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/run.php:15
+    -> str_split() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:21
+    -> SebastianBergmann\XdebugTraceUtil\Example->privateMethod() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:22
+      -> ord() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:30
+    -> SebastianBergmann\XdebugTraceUtil\Example->privateMethod() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:22
+      -> ord() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:30
+    -> SebastianBergmann\XdebugTraceUtil\Example->privateMethod() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:22
+      -> ord() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:30
+    -> SebastianBergmann\XdebugTraceUtil\Example->privateMethod() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:22
+      -> ord() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:30
+    -> SebastianBergmann\XdebugTraceUtil\Example->privateMethod() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:22
+      -> ord() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:30
+    -> SebastianBergmann\XdebugTraceUtil\Example->privateMethod() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:22
+      -> ord() /path/to/xdebug-trace-util/tests/fixture/method-in-autoloaded-class/src/Example.php:30
