@@ -2,6 +2,7 @@
 /.phive         export-ignore
 .php_cs.dist    export-ignore
 /build.xml      export-ignore
+/infection.json export-ignore
 /phpunit.xml    export-ignore
 /psalm.xml      export-ignore
 /tests          export-ignore
