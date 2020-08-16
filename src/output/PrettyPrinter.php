@@ -27,6 +27,7 @@ final class PrettyPrinter
                 continue;
             }
 
+            /* @noinspection PhpParamsInspection */
             $buffer .= $this->printEntryFrame($frame);
         }
 
