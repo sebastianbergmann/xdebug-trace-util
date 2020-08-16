@@ -13,8 +13,8 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * @covers \SebastianBergmann\XdebugTraceUtil\SplAutoloadCallFilter
+ * @covers \SebastianBergmann\XdebugTraceUtil\FrameCollection
  *
- * @uses \SebastianBergmann\XdebugTraceUtil\FrameCollection
  * @uses \SebastianBergmann\XdebugTraceUtil\FrameCollectionIterator
  * @uses \SebastianBergmann\XdebugTraceUtil\Frame
  * @uses \SebastianBergmann\XdebugTraceUtil\FrameWithTimeAndMemory
