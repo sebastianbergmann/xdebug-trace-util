@@ -14,7 +14,7 @@ use function sprintf;
 use function str_repeat;
 
 /**
- * @psalm-immutable
+ * @psalm-pure
  */
 final class PrettyPrinter
 {

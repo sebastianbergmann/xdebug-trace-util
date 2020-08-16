@@ -14,7 +14,7 @@ use Countable;
 use IteratorAggregate;
 
 /**
- * @psalm-immutable
+ * @psalm-pure
  */
 final class FrameCollection implements Countable, IteratorAggregate
 {
